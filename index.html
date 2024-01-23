@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student registration</title>
+
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>student registration</legend>
+            <div class="first name">
+                <label for="name">first name</label>
+                <input type="text">
+            </div>
+            <div class="last name">
+                <label>last name</label>
+                <input type="text">
+            </div>
+            <div class="password">
+                <label for="password">password</label>
+                <input type="password" maxlength="8" />
+            </div>
+
+
+            <p>GENDER</p>
+            <div>
+                <input type="radio" name="Male" />
+                <label for="name">Male</label>
+
+            </div>
+            <div>
+                <input type="radio" name="Female" />
+                <label for="name">Female</label>
+            </div>
+            <div>
+                <label for="name">Department</label>
+                <input type="text" list="cs" placeholder="CS">
+                <datalist id="cs">
+                    <optgroup>
+                        <option value="ce"> </option>
+                        <option value="it"> </option>
+                        <option value="acc"> </option>
+                    </optgroup>
+
+                </datalist>
+
+                <div>
+                    <p>Courses you will be taking</p>
+                    <input type="checkbox" />
+                    <label for="name">java</label>
+                    <input type="checkbox" />
+                    <label for="name">DB</label>
+                    <input type="checkbox" />
+                    <label for="name">IP</label>
+                    <input type="checkbox" />
+                    <label for="name">Network</label>
+                </div>
+                <div>
+                    <p>Attach your photo </p>
+                    <input type="file" />
+
+                </div>
+                <div>
+                    <button type="submit">submit</button>
+                    <button type="submit">Reset</button>
+
+                </div>
+            </div>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
